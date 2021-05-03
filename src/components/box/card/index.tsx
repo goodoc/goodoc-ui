@@ -8,7 +8,7 @@ type Props = {
 export default function Card({ style }: Props) {
   return (
     <div style={style}>
-      card
+      cards
     </div>
   )
 }
