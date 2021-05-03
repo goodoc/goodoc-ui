@@ -1,7 +1,7 @@
 {
-  "name": "my-awesome-component-library",
-  "version": "1.0.2",
-  "description": "A stroybook 6 with TypeScript demo",
+  "name": "goodoc-ui",
+  "version": "0.0.1",
+  "description": "Goodoc design system on react",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
