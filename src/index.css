@@ -1,0 +1,12 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+.clickable:hover {
+  opacity: 0.7;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+div, a, span, p, pre, input {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
