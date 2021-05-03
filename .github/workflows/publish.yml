@@ -18,7 +18,7 @@ jobs:
           node-version: '14'
       - name: add dependency
         run: npm install
-      - run: npm ci
-      - uses: JS-DevTools/npm-publish@v1
+      - name: publish
+        uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
