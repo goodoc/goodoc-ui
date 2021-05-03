@@ -5,6 +5,18 @@
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodoc/goodoc-ui"
+  },
+  "author": {
+    "name": "goodoc",
+    "email": "dany.kwak@goodoc.co.kr",
+    "url": "https://goodoc.io"
+  },
+  "bugs": {
+    "url": "https://github.com/goodoc/goodoc-ui/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
@@ -17,11 +29,11 @@
     "tests": false
   },
   "keywords": [
-    "stroybook",
-    "react",
-    "typescript"
+    "npm",
+    "goodoc",
+    "react-cli",
+    "cli"
   ],
-  "author": "Prateek Surana",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.9",
