@@ -19,7 +19,6 @@ jobs:
       - name: add dependency
         run: npm install
       - run: npm ci
-      - name: publish
-        run: npm publish --access public
-        env:
-          NPM_TOKEN: '61fa5712-e97f-4ceb-b91d-213aee1eb108'
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
