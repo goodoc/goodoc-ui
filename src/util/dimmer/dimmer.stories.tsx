@@ -1,3 +1,4 @@
+import React from 'react';
 import Dimmer from '.';
 
 export default {

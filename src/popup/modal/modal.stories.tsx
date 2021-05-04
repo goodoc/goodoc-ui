@@ -1,3 +1,4 @@
+import React from 'react';
 import Modal, { useModal } from '.';
 import Button from '../../input/button'
 
