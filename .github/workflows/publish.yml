@@ -24,7 +24,7 @@ jobs:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: document build
-        run: yarn build-storybook
+        run: npm run build-storybook
       
       - name: Deploy document to S3
         uses: jakejarvis/s3-sync-action@master
