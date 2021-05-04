@@ -31,8 +31,8 @@
   "keywords": [
     "npm",
     "goodoc",
-    "react-cli",
-    "cli"
+    "ui",
+    "design system"
   ],
   "license": "MIT",
   "devDependencies": {
