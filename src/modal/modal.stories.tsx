@@ -1,9 +1,9 @@
 import React from 'react';
 import Modal, { useModal } from '.';
-import Button from '../../input/button'
+import Button from '../button'
 
 export default {
-  title: 'popup/modal',
+  title: 'Modal',
   component: Modal,
 }
 

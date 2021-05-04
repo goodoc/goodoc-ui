@@ -1,9 +1,9 @@
 import React from 'react';
 import Alert, { useAlert } from '.';
-import Button from '../../input/button'
+import Button from '../button'
 
 export default {
-  title: 'popup/alert',
+  title: 'Alert',
   component: Alert,
 }
 

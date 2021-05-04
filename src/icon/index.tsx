@@ -1,6 +1,6 @@
 import React from 'react'
-import { ClassName } from '../../staticString'
-import '../../index.css'
+import { ClassName } from '../staticString'
+import '../index.css'
 
 type Props = {
   src: any

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Dimmer from '../../util/dimmer'
-import '../../index.css'
+import Dimmer from '../dimmer'
+import '../index.css'
 
 type ModalProps = {
   children: React.ReactNode

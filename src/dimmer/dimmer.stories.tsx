@@ -2,7 +2,7 @@ import React from 'react';
 import Dimmer from '.';
 
 export default {
-  title: 'util/dimmer',
+  title: 'Dimmer',
   component: Dimmer,
 }
 

@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
-import theme from '../../theme';
-import '../../index.css'
-import { ClassName } from '../../staticString';
+import theme from '../theme';
+import '../index.css'
+import { ClassName } from '../staticString';
 
 type Props = {
   text: string

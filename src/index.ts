@@ -1,21 +1,21 @@
-export { default as Card } from './box/card'
-export * from './box/card'
+export { default as Card } from './card'
+export * from './card'
 
-export { default as Button } from './input/button' 
-export * from './input/button'
+export { default as Button } from './button' 
+export * from './button'
 
-export { useModal } from './popup/modal'
-export * from './popup/modal'
+export { useModal } from './modal'
+export * from './modal'
 
-export { useAlert } from './popup/alert'
-export * from './popup/alert'
+export { useAlert } from './alert'
+export * from './alert'
 
-export { default as Chip } from './util/chip'
-export * from './util/chip'
+export { default as Chip } from './chip'
+export * from './chip'
 
-export { default as dimmer } from './util/dimmer'
-export * from './util/dimmer'
+export { default as dimmer } from './dimmer'
+export * from './dimmer'
 
-export { default as icon } from './util/icon'
-export * from './util/icon'
+export { default as icon } from './icon'
+export * from './icon'
 

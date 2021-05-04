@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import Dimmer from '../../util/dimmer'
-import '../../index.css'
-import theme from '../../theme'
-import Button from '../../input/button'
-import Icon from '../../util/icon'
-import close from '../../icon/close.svg'
+import Dimmer from '../dimmer'
+import '../index.css'
+import theme from '../theme'
+import Button from '../button'
+import Icon from '../icon'
+import close from '../icons/close.svg'
 
 type AlertProps = {
   message: string
