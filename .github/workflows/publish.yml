@@ -37,8 +37,11 @@ jobs:
       
       - name: ready publish 1 => copy package.json to lib
         run: cp package.json lib
+
+      - name: ready publish 2 => build
+        run: npm run build
       
-      - name: ready publish2 => mv directory to lib
+      - name: ready publish3 => mv directory to lib
         run: cd lib
 
       - name: publish
