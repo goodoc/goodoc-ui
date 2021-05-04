@@ -4,7 +4,7 @@ import '../../index.css'
 import theme from '../../theme'
 import Button from '../../input/button'
 import Icon from '../../util/icon'
-import close from '../../../icon/close.svg'
+import close from '../../icon/close.svg'
 
 type AlertProps = {
   message: string
