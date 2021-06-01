@@ -10,3 +10,5 @@
 div, a, span, p, pre, input {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
+
+input:focus { outline: none; }

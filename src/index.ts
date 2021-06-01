@@ -19,3 +19,6 @@ export * from './dimmer'
 export { default as icon } from './icon'
 export * from './icon'
 
+export { default as TextField } from './textField'
+export * from './textField'
+
