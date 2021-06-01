@@ -22,3 +22,6 @@ export * from './icon'
 export { default as TextField } from './textField'
 export * from './textField'
 
+export { default as Theme } from './theme'
+export * from './theme'
+
