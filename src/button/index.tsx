@@ -8,12 +8,13 @@ type Props = {
   style?: CSSProperties
   size?: 'xsmall' | 'small' | 'normal' | 'large' | 'xlarge'
   color?: 'primary' | 'warn' | 'white'
+  inactive?: boolean
   onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
 
 
-export default function Button({text, onClick, style, size='normal', color='primary'}: Props) {
+export default function Button({text, onClick, style, size='normal', color='primary', inactive}: Props) {
   const width = theme.size.button[size];
   let height = width / 3;
 
@@ -27,8 +28,8 @@ export default function Button({text, onClick, style, size='normal', color='prim
     width: `${width}px`,
     height: `${height}px`,
     borderRadius: '8px',
-    backgroundColor: theme.color[color],
-    color: textColor,
+    backgroundColor: inactive? theme.color.gray['20'] : theme.color[color],
+    color: inactive? theme.color.gray['50'] : textColor,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -37,6 +38,6 @@ export default function Button({text, onClick, style, size='normal', color='prim
   }
 
   return (
-    <div className={ClassName.clickable} style={defaultStyle} onClick={onClick}>{text}</div>
+    <div className={inactive ? '' : ClassName.clickable} style={defaultStyle} onClick={onClick}>{text}</div>
   )
 }

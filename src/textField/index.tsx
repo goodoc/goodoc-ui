@@ -25,6 +25,7 @@ export default function TextField({ style, error, placeholder, onChange, value }
     height: '56px',
     borderRadius: '8px',
     display: 'flex',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     border,
     ...style
