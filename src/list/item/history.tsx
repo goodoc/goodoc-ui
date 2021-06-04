@@ -12,7 +12,7 @@ type Props = {
   additionalItem?: React.ReactNode
   style?: React.CSSProperties
 }
-export default function History({ style, icon, additionalItem, title, badge, description, subDescription }: Props) {
+export default function History({ style, icon, additionalItem, title, badge, description, subDescription, onClick }: Props) {
   const defaultStyle: React.CSSProperties = {
     width: '100%',
     flex: '0 0 124px',
@@ -21,7 +21,7 @@ export default function History({ style, icon, additionalItem, title, badge, des
     ...style,
   }
   return (
-    <div style={defaultStyle}>
+    <div style={defaultStyle} onClick={onClick}>
       {/* 좌측 아이콘 영역 */}
       {icon && (
         <div style={{

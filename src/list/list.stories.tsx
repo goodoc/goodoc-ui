@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './container';
 import HistoryItem from './item/history';
+import ProfileItem from './item/profile';
 import Icon from '../icon';
 import SampleIcon from '../icons/listItemIconSample.svg';
 import NavigatableIcon from '../icons/navigatable.svg';
@@ -48,7 +49,34 @@ export const HistoryList = () => {
         description="서울자이청소년 의원"
         subDescription="유지은 | 2020.03.04"
         additionalItem={<Button text="리뷰작성" inactive style={{ width: '76px', height: '32px', fontSize: '14px' }} />}
-      />    
+      />  
+
+      <ProfileItem
+        title="박준균 대표원장"
+        descriptions={["영상의학과 전문의"]}
+        tags={['영상의학과', '초음파 검진']}
+      />
+      <ProfileItem
+        title="박준균 대표원장"
+      />
+      <ProfileItem
+        title="박준균 대표원장"
+        descriptions={["영상의학과 전문의"]}
+      />
+      <ProfileItem
+        title="박준균 대표원장"
+        tags={['영상의학과', '초음파 검진']}
+      />
+      <ProfileItem
+        title="박준균 대표원장"
+        descriptions={["영상의학과 전문의"]}
+        tags={['영상의학과', '초음파 검진', '영상의학과', '초음파 검진', '영상의학과', '초음파 검진']}
+      />
+      <ProfileItem
+        title="박준균 대표원장"
+        descriptions={["영상의학과 전문의", "소화기내시경 전문의", "내과 전문의"]}
+        tags={['영상의학과', '초음파 검진', '영상의학과', '초음파 검진', '영상의학과', '초음파 검진']}
+      />
     </List>
   )
 }

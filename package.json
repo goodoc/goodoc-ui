@@ -1,6 +1,6 @@
 {
   "name": "goodoc-ui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Goodoc design system on react",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",

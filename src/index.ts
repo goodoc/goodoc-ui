@@ -25,6 +25,6 @@ export * from './textField'
 export { default as Theme } from './theme'
 export * from './theme'
 
-export { ListContainer, HistoryItem } from './list'
+export { ListContainer, HistoryItem, ProfileItem } from './list'
 export * from './list'
 
