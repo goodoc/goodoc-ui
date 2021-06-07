@@ -2,6 +2,7 @@ import React from 'react';
 import List from './container';
 import HistoryItem from './item/history';
 import ProfileItem from './item/profile';
+import HospitalItem from './item/hospital';
 import Icon from '../icon';
 import SampleIcon from '../icons/listItemIconSample.svg';
 import NavigatableIcon from '../icons/navigatable.svg';
@@ -76,6 +77,48 @@ export const HistoryList = () => {
         title="박준균 대표원장"
         descriptions={["영상의학과 전문의", "소화기내시경 전문의", "내과 전문의"]}
         tags={['영상의학과', '초음파 검진', '영상의학과', '초음파 검진', '영상의학과', '초음파 검진']}
+      />
+      <HospitalItem
+        title="강남연세소아과의원"
+        operationInfo={{
+          status: '진료중',
+          openTime: '10:00',
+          closeTime: '19:00'
+        }}
+        distance="300m"
+        badges={['🚀로켓접수', '예약']}
+        departments={['소아청소년과', '외과', '내과']}
+      />
+      <HospitalItem
+        title="강남연세소아과의원"
+        operationInfo={{
+          status: '진료준비',
+          openTime: '10:00',
+          closeTime: '19:00'
+        }}
+        distance="300m"
+        departments={['소아청소년과', '외과', '내과']}
+      />
+      <HospitalItem
+        title="강남연세소아과의원"
+        operationInfo={{
+          status: '진료종료',
+          openTime: '10:00',
+          closeTime: '19:00'
+        }}
+        distance="300m"
+        departments={['소아청소년과', '외과', '내과']}
+      />
+      <HospitalItem
+        title="강남연세소아과의원"
+        operationInfo={{
+          status: '진료중',
+          openTime: '10:00',
+          closeTime: '19:00'
+        }}
+        distance="300m"
+        departments={['소아청소년과', '외과', '내과']}
+        tags={['전문의', '주차가능', '여의사']}
       />
     </List>
   )
