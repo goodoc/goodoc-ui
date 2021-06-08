@@ -2,6 +2,7 @@ import React, { CSSProperties, useState } from 'react';
 import theme from '../theme';
 import CircleClose from '../icons/circleClose.svg';
 import Icon from '../icon';
+import { ClassName } from '../staticString';
 import '../index.css'
 
 type Props = {
@@ -69,7 +70,19 @@ export default function TextField({ style, error, placeholder, onChange, value, 
     <div onBlur={() => { setFocus(false) }} onFocus={() => { setFocus(true) }} style={boxStyle} >
       <input onChange={handleChange} placeholder={placeholder} value={value} style={inputStyle} disabled={disable} />
       {clean && (
-        <Icon onClick={handleClearClick} style={{ marginRight: '20px' }} size={16} src={CircleClose} />  
+        <div className={ClassName.clickable} style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '16px',
+          height: '16px',
+          flex: '0 0 16px',
+          backgroundColor: theme.color.gray['40'],
+          marginRight: '20px',
+          borderRadius: '8px',
+        }}>
+          <Icon onClick={handleClearClick} size={8} src={CircleClose} />  
+        </div>
       )}
     </div>
   )
