@@ -28,3 +28,4 @@ export * from './theme'
 export { ListContainer, HistoryItem, ProfileItem } from './list'
 export * from './list'
 
+export { default as Icons } from './icons'
