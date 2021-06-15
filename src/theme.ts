@@ -57,6 +57,11 @@ export default {
   typography: {
     fontFamily: {
       basic: 'Spoqa Han Sans Neo'
+    },
+    weight: {
+      base: 400,
+      medium: 500,
+      bold: 700,
     }
   }
 }
