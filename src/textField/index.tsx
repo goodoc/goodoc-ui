@@ -1,6 +1,6 @@
 import React, { CSSProperties, useState } from 'react';
 import theme from '../theme';
-import CircleClose from '../icons/circleClose.svg';
+import Icons from '../icons';
 import Icon from '../icon';
 import { ClassName } from '../staticString';
 import '../index.css'
@@ -70,7 +70,7 @@ export default function TextField({ style, error, placeholder, onChange, value, 
     <div onBlur={() => { setFocus(false) }} onFocus={() => { setFocus(true) }} style={boxStyle} >
       <input onChange={handleChange} placeholder={placeholder} value={value} style={inputStyle} disabled={disable} />
       {clean && (
-        <Icon onClick={handleClearClick} style={{ marginRight: '20px' }} size={8} src={CircleClose} />  
+        <Icon onClick={handleClearClick} style={{ marginRight: '20px' }} size={8} src={Icons.CircleClose} />  
       )}
     </div>
   )

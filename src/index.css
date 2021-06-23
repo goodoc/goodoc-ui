@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.customSvgColor > path {
+  fill: none;
+}
+
 div, a, span, p, pre, input {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }

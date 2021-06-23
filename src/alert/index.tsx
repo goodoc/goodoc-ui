@@ -4,7 +4,7 @@ import '../index.css'
 import theme from '../theme'
 import Button from '../button'
 import Icon from '../icon'
-import close from '../icons/close.svg'
+import Icons from '../icons'
 
 type AlertProps = {
   message: string
@@ -50,7 +50,7 @@ export default function Alert({ message, onConfirm, onCancel }: AlertProps) {
     <Dimmer>
       <div style={alertContainerStyle}>
         <div style={closeBoxStyle}>
-          <Icon size={24} onClick={handleClickConform} src={close} />
+          <Icon size={24} onClick={handleClickConform} src={Icons.Close} />
         </div>
         <div style={messageStyle}>
           {message}

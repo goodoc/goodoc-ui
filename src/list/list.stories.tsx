@@ -5,7 +5,7 @@ import ProfileItem from './item/profile';
 import HospitalItem from './item/hospital';
 import Icon from '../icon';
 import SampleIcon from '../icons/listItemIconSample.svg';
-import NavigatableIcon from '../icons/navigatable.svg';
+import Icons from '../icons';
 import Button from '../button'
 
 export default {
@@ -24,7 +24,7 @@ export const HistoryList = () => {
         description="접종을 완료했어요."
         subDescription="2021.04.06"
         icon={SampleIcon}
-        additionalItem={<Icon src={NavigatableIcon} size={14} />}
+        additionalItem={<Icon src={Icons.RightArrow} size={14} />}
       />
 
       <HistoryItem

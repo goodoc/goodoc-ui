@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import theme from '../../theme';
 import Icon from '../../icon'
-import NavigatableIcon from '../../icons/navigatable.svg'
+import Icons from '../../icons'
 
 type Props = {
   title: string
@@ -136,7 +136,7 @@ export default function ProfileItem({ title, descriptions, tags, onClick, style,
       </div>
       {/* Arrow Box */}
       <div style={{ marginRight: '20px', display: 'flex', height: `${boxHeight}px`, alignItems: 'center', minHeight: '94px' }} >
-        <Icon src={NavigatableIcon} size={14} />
+        <Icon src={Icons.RightArrow} size={14} />
       </div>
     </div>
   )

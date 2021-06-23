@@ -1,3 +1,4 @@
 export enum ClassName {
-  clickable = 'clickable'
+  clickable = 'clickable',
+  customSvgColor = 'customSvgColor'
 }
