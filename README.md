@@ -22,6 +22,4 @@ function Component() {
 ```
 
 ## Doc
-```
-[Doc Link](http://goodoc-ui-doc.s3-website.ap-northeast-2.amazonaws.com/)
-```
+[Document](https://goodoc-ui.goodoc.co.kr/)
