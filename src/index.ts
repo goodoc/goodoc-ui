@@ -7,10 +7,10 @@ export * from './modal'
 export { useAlert } from './alert'
 export * from './alert'
 
-export { default as dimmer } from './dimmer'
+export { default as Dimmer } from './dimmer'
 export * from './dimmer'
 
-export { default as icon } from './icon'
+export { default as Icon } from './icon'
 export * from './icon'
 
 export { default as TextField } from './textField'
