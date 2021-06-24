@@ -22,4 +22,4 @@ function Component() {
 ```
 
 ## Doc
-[DocumentLink](https://goodoc-ui.goodoc.co.kr)
+[DocumentLink](https://uidoc.goodoc.kr)
