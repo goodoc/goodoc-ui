@@ -30,7 +30,7 @@ export default function History({ style, icon, additionalItem, title, badge, des
           display: 'flex',
           alignItems: 'center',
         }}>
-          <Icon src={icon} size={28} />
+          <Icon src={icon} />
         </div>
       )}
       <div style={{ display: 'flex', justifyContent: 'space-between', flex: '1', height: '124px' }}>

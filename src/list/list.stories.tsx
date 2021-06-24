@@ -24,7 +24,7 @@ export const HistoryList = () => {
         description="접종을 완료했어요."
         subDescription="2021.04.06"
         icon={SampleIcon}
-        additionalItem={<Icon src={Icons.RightArrow} size={14} />}
+        additionalItem={<Icon src={Icons.RightArrow} />}
       />
 
       <HistoryItem

@@ -50,7 +50,7 @@ export default function Alert({ message, onConfirm, onCancel }: AlertProps) {
     <Dimmer>
       <div style={alertContainerStyle}>
         <div style={closeBoxStyle}>
-          <Icon size={24} onClick={handleClickConform} src={Icons.Close} />
+          <Icon onClick={handleClickConform} src={Icons.Close} />
         </div>
         <div style={messageStyle}>
           {message}

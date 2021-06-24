@@ -136,7 +136,7 @@ export default function ProfileItem({ title, descriptions, tags, onClick, style,
       </div>
       {/* Arrow Box */}
       <div style={{ marginRight: '20px', display: 'flex', height: `${boxHeight}px`, alignItems: 'center', minHeight: '94px' }} >
-        <Icon src={Icons.RightArrow} size={14} />
+        <Icon src={Icons.RightArrow} />
       </div>
     </div>
   )
