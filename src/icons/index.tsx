@@ -83,8 +83,8 @@ const Share = ({ color, size }: IconProps) => (
   </svg>
 )
 
-const CircleClose = ({ color, size }: IconProps) => (
-  <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+const CircleClose = ({ color }: IconProps) => (
+  <svg width={16} height={16} viewBox={`0 0 ${16} ${16}`} fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="8" cy="8" r="8" fill="white"/>
     <path fillRule="evenodd" clipRule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.37624 4.37623C4.76676 3.9857 5.39993 3.9857 5.79045 4.37623L8.00001 6.58579L10.2096 4.37623C10.6001 3.9857 11.2333 3.9857 11.6238 4.37623C12.0143 4.76675 12.0143 5.39991 11.6238 5.79044L9.41422 8L11.6238 10.2096C12.0143 10.6001 12.0143 11.2332 11.6238 11.6238C11.2333 12.0143 10.6001 12.0143 10.2096 11.6238L8.00001 9.41421L5.79045 11.6238C5.39993 12.0143 4.76676 12.0143 4.37624 11.6238C3.98571 11.2332 3.98571 10.6001 4.37624 10.2096L6.5858 8L4.37624 5.79044C3.98571 5.39991 3.98571 4.76675 4.37624 4.37623Z" fill={color ? color : '#CBCFD7'}/>
   </svg>

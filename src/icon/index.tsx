@@ -5,17 +5,16 @@ import { IconProps } from '../icons'
 
 type Props = {
   src: (props: IconProps) => JSX.Element
-  size: number
   onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
   style?: React.CSSProperties
   color?: string
 }
 
-export default function Icon({ src, size, onClick, style, color }: Props) {
+export default function Icon({ src, onClick, style, color }: Props) {
   const iconBoxStyle: React.CSSProperties = {
-    width: `${size}px`,
-    height: `${size}px`,
-    flex: `0 0 ${size}px`,
+    width: '24px',
+    height: '24px',
+    flex: '0 0 24px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -27,7 +26,7 @@ export default function Icon({ src, size, onClick, style, color }: Props) {
 
   return (
     <div className={onClick ? ClassName.clickable : ''} onClick={onClick} style={iconBoxStyle}>
-      <Component color={color} size={size} />
+      <Component color={color} size={24} />
     </div>
   )
 }

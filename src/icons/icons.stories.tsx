@@ -55,127 +55,127 @@ export const Icons = () => {
     <IconsBox>
       {/* Use Icon Component & svg on icons */}
       <IconBox>
-        <Icon src={IconCollection.LeftArrowLight} size={24} />
+        <Icon src={IconCollection.LeftArrowLight} />
         <IconName >
           LeftArrowLight
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.RightArrowLight} size={24} />
+        <Icon src={IconCollection.RightArrowLight} />
         <IconName >
           RightArrowLight
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.DownArrowLight} size={24} />
+        <Icon src={IconCollection.DownArrowLight} />
         <IconName >
           DownArrowLight
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.UpArrowLight} size={24} />
+        <Icon src={IconCollection.UpArrowLight} />
         <IconName >
           UpArrowLight
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.CloseLight} size={24} />
+        <Icon src={IconCollection.CloseLight} />
         <IconName >
           CloseLight
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.LeftArrow} size={24} />
+        <Icon src={IconCollection.LeftArrow} />
         <IconName >
           LeftArrow
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.RightArrow} size={24} />
+        <Icon src={IconCollection.RightArrow} />
         <IconName >
           RightArrow
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.DownArrow} size={24} />
+        <Icon src={IconCollection.DownArrow} />
         <IconName >
           DownArrow
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.UpArrow} size={24} />
+        <Icon src={IconCollection.UpArrow} />
         <IconName >
           UpArrow
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Close} size={24} />
+        <Icon src={IconCollection.Close} />
         <IconName >
           Close
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Search} size={24} />
+        <Icon src={IconCollection.Search} />
         <IconName >
           Search
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Share} size={24} />
+        <Icon src={IconCollection.Share} />
         <IconName >
           Share
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.CircleClose} size={24} />
+        <Icon src={IconCollection.CircleClose} />
         <IconName >
           CircleClose
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Refresh} size={24} />
+        <Icon src={IconCollection.Refresh} />
         <IconName >
           Refresh
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Setting} size={24} />
+        <Icon src={IconCollection.Setting} />
         <IconName >
           Setting
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Notice} size={24} />
+        <Icon src={IconCollection.Notice} />
         <IconName >
           Notice
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.My} size={24} />
+        <Icon src={IconCollection.My} />
         <IconName >
           My
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.ListActivity} size={24} />
+        <Icon src={IconCollection.ListActivity} />
         <IconName >
         ListActivity
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Cart} size={24} />
+        <Icon src={IconCollection.Cart} />
         <IconName >
           Cart
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Save} size={24} />
+        <Icon src={IconCollection.Save} />
         <IconName >
           Save
         </IconName>
       </IconBox>
       <IconBox>
-        <Icon src={IconCollection.Saved} size={24} />
+        <Icon src={IconCollection.Saved} />
         <IconName >
           Saved
         </IconName>

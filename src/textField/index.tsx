@@ -1,7 +1,6 @@
 import React, { CSSProperties, useState } from 'react';
 import theme from '../theme';
 import Icons from '../icons';
-import Icon from '../icon';
 import { ClassName } from '../staticString';
 import '../index.css'
 
@@ -70,7 +69,9 @@ export default function TextField({ style, error, placeholder, onChange, value, 
     <div onBlur={() => { setFocus(false) }} onFocus={() => { setFocus(true) }} style={boxStyle} >
       <input onChange={handleChange} placeholder={placeholder} value={value} style={inputStyle} disabled={disable} />
       {clean && (
-        <Icon onClick={handleClearClick} style={{ marginRight: '20px' }} size={16} src={Icons.CircleClose} />  
+        <div className={ClassName.clickable} onClick={handleClearClick} style={{ marginRight: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center'  }}>
+          <Icons.CircleClose />
+        </div>
       )}
     </div>
   )

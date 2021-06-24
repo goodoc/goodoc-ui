@@ -10,13 +10,13 @@ export default {
 
 export const BasicIcon = () => {
   return (
-    <Icon src={IconCollection.RightArrow} size={24} />
+    <Icon src={IconCollection.RightArrow} />
   )
 }
 
 export const ColorIcon = () => {
   return (
-    <Icon src={IconCollection.Save} size={24} color={theme.color.red['60']} />
+    <Icon src={IconCollection.Save} color={theme.color.red['60']} />
   )
 }
 
