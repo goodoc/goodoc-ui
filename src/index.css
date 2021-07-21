@@ -15,4 +15,20 @@ div, a, span, p, pre, input {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
+.drawer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+  /* Initial transforms */
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.drawer.isOpen {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 input:focus { outline: none; }

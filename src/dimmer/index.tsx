@@ -26,7 +26,7 @@ export default function Dimmer({ children, onClick, backgroundColor = 'rgba(0, 0
 
   return (
     <div onClick={onClick} style={backgroundStyle}>
-      <div style={{ zIndex: 99999999 }} onClick={(e) => e.stopPropagation()}>
+      <div style={{ zIndex: 99999999, position: 'relative' }} onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
     </div>

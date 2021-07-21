@@ -26,11 +26,11 @@ const ExtenalDinner = () => {
 
 export const Basic = () => {
   return (
-    <>
-    <ExtenalDinner />
-    <Dimmer>
-      <CenterBox />
-    </Dimmer>
-    </>
+    <div style={{ width: '500px', height: '800px' }}>
+      <ExtenalDinner />
+      <Dimmer>
+        <CenterBox />
+      </Dimmer>
+    </div>
   )
 }
