@@ -8,6 +8,7 @@ import Icons from '../icons'
 
 type AlertProps = {
   message: string
+  description?: string
   onConfirm?: () => void
   onCancel: () => void
 }
@@ -32,29 +33,46 @@ const closeBoxStyle: React.CSSProperties = {
 }
 
 const messageStyle: React.CSSProperties = {
-  marginTop: '60px',
   width: '100%',
-  fontSize: `${theme.size.text.normal}px`,
+  fontSize: '20px',
+  fontWeight: 700,
   color: theme.color.gray['100'],
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
 }
 
-export default function Alert({ message, onConfirm, onCancel }: AlertProps) {
+export default function Alert({ message, onConfirm, onCancel, description }: AlertProps) {
   const handleClickConform = () => {
     onConfirm && onConfirm();
     onCancel && onCancel();
   }
+
   return (
     <Dimmer>
       <div style={alertContainerStyle}>
         <div style={closeBoxStyle}>
           <Icon onClick={handleClickConform} src={Icons.Close} />
         </div>
-        <div style={messageStyle}>
+        <div style={{
+          ...messageStyle,
+          marginTop: description ? '40px' : '60px'
+        }}>
           {message}
         </div>
+        {description && (
+          <div style={{
+            marginTop: '11px',
+            textAlign: 'center',
+            width: '195px',
+            fontWeight: 400,
+            fontSize: '14px',
+            lineHeight: '20px',
+            color: theme.color.gray['60'],
+          }}>
+            {description}
+          </div>
+        )}
         <Button onClick={onConfirm} style={{ borderRadius: '4px', width: '280px', height: '47px', position: 'absolute', bottom: '23px' }} text="확인" />
       </div>
     </Dimmer>
@@ -64,9 +82,10 @@ export default function Alert({ message, onConfirm, onCancel }: AlertProps) {
 type Props = {
   message: string
   onConfirm?: () => void
+  description?: string
 }
 
-export const useAlert = ({ onConfirm, message }: Props) => {
+export const useAlert = ({ onConfirm, message, description }: Props) => {
   const [isOpen, setOpen] = useState(false)
 
 
@@ -82,7 +101,7 @@ export const useAlert = ({ onConfirm, message }: Props) => {
   }
 
   return {
-    alert: isOpen? <Alert message={message} onCancel={closeAlert} onConfirm={confirm} /> : null,
+    alert: isOpen? <Alert description={description} message={message} onCancel={closeAlert} onConfirm={confirm} /> : null,
     open: () => setOpen(true),
   }
 }
