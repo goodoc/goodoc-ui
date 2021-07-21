@@ -9,11 +9,12 @@ type ModalProps = {
 }
 
 export default function Drawer({ children, close, isOpen }: ModalProps) {
+  const width = typeof window === 'undefined' ? '100%' : window.innerWidth
   return (
     <>
       {isOpen && <Dimmer onClick={close}>{null}</Dimmer>}
       <div style={{
-        width: window.innerWidth,
+        width: width,
         zIndex: isOpen ? 9999999999999 : -1,
         borderTopLeftRadius: '8px',
         borderTopRightRadius: '8px',
